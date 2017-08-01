@@ -22,9 +22,7 @@
             <TableLayout
                 android:id="@+id/table_main"
                 android:layout_width="match_parent"
-                android:background="@drawable/valuecellborder"
-                android:layout_height="match_parent"
-                android:text="Hello World!" />
+                android:layout_height="match_parent" />
         </HorizontalScrollView>
 
     </ScrollView>

@@ -22,18 +22,22 @@ public class MainActivity extends AppCompatActivity {
         TextView tv0 = new TextView(this);
         tv0.setText(" Sl.No ");
         tv0.setTextColor(Color.WHITE);
+        tv0.setBackground(getResources().getDrawable(R.drawable.valuecellborder));
         tbrow0.addView(tv0);
         TextView tv1 = new TextView(this);
         tv1.setText(" Product ");
         tv1.setTextColor(Color.WHITE);
+        tv1.setBackground(getResources().getDrawable(R.drawable.valuecellborder));
         tbrow0.addView(tv1);
         TextView tv2 = new TextView(this);
         tv2.setText(" Unit Price ");
         tv2.setTextColor(Color.WHITE);
+        tv2.setBackground(getResources().getDrawable(R.drawable.valuecellborder));
         tbrow0.addView(tv2);
         TextView tv3 = new TextView(this);
         tv3.setText(" Stock Remaining ");
         tv3.setTextColor(Color.WHITE);
+        tv3.setBackground(getResources().getDrawable(R.drawable.valuecellborder));
         tbrow0.addView(tv3);
 
         TextView tv4 = new TextView(this);
