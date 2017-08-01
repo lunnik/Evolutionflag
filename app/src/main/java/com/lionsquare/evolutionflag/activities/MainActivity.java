@@ -3,14 +3,16 @@ package com.lionsquare.evolutionflag.activities;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
+import android.view.View;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
 import com.lionsquare.evolutionflag.R;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
         TextView tv0 = new TextView(this);
         tv0.setText(" Sl.No ");
         tv0.setTextColor(Color.WHITE);
+        tv0.setTag("tv_uno");
+        tv0.setOnClickListener(this);
         tv0.setBackground(getResources().getDrawable(R.drawable.valuecellborder));
         tbrow0.addView(tv0);
         TextView tv1 = new TextView(this);
@@ -73,6 +77,16 @@ public class MainActivity extends AppCompatActivity {
             t5v.setGravity(Gravity.CENTER);
             tbrow.addView(t5v);
             stk.addView(tbrow);
+        }
+    }
+
+    @Override
+    public void onClick(View view) {
+        String ss = (String) view.getTag();
+        switch (ss) {
+            case "tv_uno":
+                Log.e("si ", "si se puede ");
+                break;
         }
     }
 }
