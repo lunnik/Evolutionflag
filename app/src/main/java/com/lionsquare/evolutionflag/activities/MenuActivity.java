@@ -90,13 +90,13 @@ public class MenuActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_table_position) {
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_chart) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_rol_play) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_reslut) {
 
         } else if (id == R.id.nav_share) {
 
