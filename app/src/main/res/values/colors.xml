@@ -20,13 +20,31 @@
 
     <color name="primary_600">#000000</color>
 
+    <!--default-->
+    <color name="primary_dark_var">#61110c</color>
+    <color name="primary_var">#d1140d</color>
+    <color name="text_color_var">#fff7f7</color>
+    <color name="accent_var">#407df5</color>
+    <color name="window_color_var">#3e3e3e</color>
+    <color name="bar_color_var">#000000</color>
 
-    <color name="primary_dark_act">#61110c</color>
-    <color name="primary_act">#d1140d</color>
-    <color name="text_color_act">#fff7f7</color>
-    <color name="accent_act">#407df5</color>
-    <color name="window_color_act">#3e3e3e</color>
-    <color name="bar_color_act">#000000</color>
+    <!--male-->
+    <color name="primary_dark_male">#004c8c</color>
+    <color name="primary_male">#0277bd</color>
+    <color name="text_color_male">#fff7f7</color>
+    <color name="accent_male">#d50000</color>
+    <color name="window_color_male">#3e3e3e</color>
+    <color name="bar_color_male">#000000</color>
+
+    <!--fame-->
+    <color name="primary_dark_fame">#bb002f</color>
+    <color name="primary_fame">#f50057</color>
+    <color name="text_color_fame">#000000</color>
+    <color name="accent_fame">#1976d2</color>
+    <color name="window_color_fame">#3e3e3e</color>
+    <color name="bar_color_fame">#000000</color>
+
+
 
     <color name="hinit">#b2b4b6</color>
     <color name="blue_card">#607D8B</color>

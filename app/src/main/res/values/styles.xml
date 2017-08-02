@@ -4,14 +4,41 @@
     <style name="ActivityStyle" parent="Theme.AppCompat.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-        <item name="android:windowBackground">@color/window_color_act</item>
-        <item name="android:textColorPrimary">@color/text_color_act</item>
+        <item name="android:windowBackground">@color/window_color_var</item>
+        <item name="android:textColorPrimary">@color/text_color_var</item>
         <item name="android:actionMenuTextColor">@color/menu_color</item>
 
         <!--Colores-->
-        <item name="colorPrimary">@color/primary_act</item>
-        <item name="colorPrimaryDark">@color/primary_dark_act</item>
-        <item name="colorAccent">@color/accent_act</item>
+        <item name="colorPrimary">@color/primary_var</item>
+        <item name="colorPrimaryDark">@color/primary_dark_var</item>
+        <item name="colorAccent">@color/accent_var</item>
+    </style>
+
+
+    <style name="Theme.Male" parent="Theme.AppCompat.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/window_color_male</item>
+        <item name="android:textColorPrimary">@color/text_color_male</item>
+        <item name="android:actionMenuTextColor">@color/menu_color</item>
+
+        <!--Colores-->
+        <item name="colorPrimary">@color/primary_male</item>
+        <item name="colorPrimaryDark">@color/primary_dark_male</item>
+        <item name="colorAccent">@color/accent_male</item>
+    </style>
+
+    <style name="Theme.Fame" parent="Theme.AppCompat.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/window_color_fame</item>
+        <item name="android:textColorPrimary">@color/text_color_fame</item>
+        <item name="android:actionMenuTextColor">@color/menu_color</item>
+
+        <!--Colores-->
+        <item name="colorPrimary">@color/primary_fame</item>
+        <item name="colorPrimaryDark">@color/primary_dark_fame</item>
+        <item name="colorAccent">@color/accent_fame</item>
     </style>
 
 
