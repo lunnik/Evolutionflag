@@ -42,7 +42,7 @@ public class SplashScreenActivity extends AppCompatActivity implements View.OnCl
     @Override
     public void onClick(View v) {
         v.startAnimation(AnimationUtils.loadAnimation(this, R.anim.image_click));
-        Intent i = new Intent(this, MenuActivity.class);
+        Intent i = new Intent(this, CategoryActivity.class);
         startActivity(i);
         finish();
     }

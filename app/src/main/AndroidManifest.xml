@@ -22,7 +22,8 @@
             android:label="@string/title_activity_menu"
             android:theme="@style/ActivityStyle" />
         <activity android:name=".activities.MainActivity" />
-        <activity android:name=".activities.CategoryActivity"></activity>
+        <activity android:name=".activities.CategoryActivity"
+            android:theme="@style/AppCompat.TranslucentSystemBars"></activity>
     </application>
 
 </manifest>

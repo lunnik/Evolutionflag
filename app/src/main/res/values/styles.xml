@@ -54,11 +54,15 @@
 
     <style name="AppCompat.TranslucentSystemBars" parent="ActivityStyle">
 
-
     </style>
 
     <style name="ActivityStyle.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="ActivityStyle.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@android:color/transparent</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
 
 </resources>
