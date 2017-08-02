@@ -6,6 +6,8 @@ import android.content.res.Configuration;
 import android.support.multidex.MultiDex;
 import android.util.Log;
 
+import com.lionsquare.evolutionflag.utils.font.Fonty;
+
 /**
  * Created by EDGAR ARANA on 01/08/2017.
  */
@@ -17,6 +19,14 @@ public class EvolutionFlag extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        //Aramis-Italic.ttf
+        //Capture_it.ttf
+        //Exo-Regular.ttf
+        Fonty.context(this)
+                .regularTypeface("Exo-Regular.ttf")
+                .italicTypeface("Exo-Regular.ttf")
+                .boldTypeface("Exo-Regular.ttf")
+                .done();
     }
 
     @Override

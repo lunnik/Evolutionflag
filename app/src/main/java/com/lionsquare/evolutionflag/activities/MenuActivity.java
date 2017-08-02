@@ -16,6 +16,7 @@ import android.view.MenuItem;
 
 import com.lionsquare.evolutionflag.R;
 import com.lionsquare.evolutionflag.utils.Preferences;
+import com.lionsquare.evolutionflag.utils.font.Fonty;
 
 public class MenuActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -43,6 +44,7 @@ public class MenuActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        Fonty.setFonts(this);
     }
 
     @Override
