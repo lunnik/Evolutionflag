@@ -29,18 +29,21 @@
             android:orientation="vertical">
 
             <Button
+                android:id="@+id/ac_btn_male"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/varonil"
                 android:theme="@style/AppTheme.Button" />
 
             <Button
+                android:id="@+id/ac_btn_fame"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/femenil"
                 android:theme="@style/AppTheme.Button" />
 
             <Button
+                android:id="@+id/ac_btn_mix"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/mixto"

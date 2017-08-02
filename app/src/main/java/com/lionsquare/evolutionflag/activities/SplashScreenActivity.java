@@ -13,6 +13,7 @@ import android.view.animation.AnimationUtils;
 import com.lionsquare.evolutionflag.R;
 import com.lionsquare.evolutionflag.databinding.ActivitySplashScreenBinding;
 import com.lionsquare.evolutionflag.utils.MyBounceInterpolator;
+import com.lionsquare.evolutionflag.utils.Preferences;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -22,21 +23,38 @@ public class SplashScreenActivity extends AppCompatActivity implements View.OnCl
     // Set the duration of the splash screen
 
     ActivitySplashScreenBinding binding;
+    private Preferences preferences;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // Set portrait orientation
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        // Hide title bar
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_splash_screen);
-
-
-        binding.ascIvLogo.setOnClickListener(this);
-
+        preferences = new Preferences(this);
+        initView();
+        initSetUp();
         animateButton();
 
+    }
+
+    void initView() {
+        binding.ascIvLogo.setOnClickListener(this);
+    }
+
+    void initSetUp() {
+        switch (preferences.getTypeLogin()) {
+            case 1:
+
+                break;
+            case 2:
+
+                break;
+            case 3:
+
+                break;
+        }
     }
 
     @Override

@@ -1,5 +1,6 @@
 package com.lionsquare.evolutionflag.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -14,13 +15,21 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.lionsquare.evolutionflag.R;
+import com.lionsquare.evolutionflag.utils.Preferences;
 
 public class MenuActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    private Preferences preferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        preferences = new Preferences(this);
+        if (preferences.getTypeLogin() == 1) setTheme(R.style.Theme_Male);
+        if (preferences.getTypeLogin() == 2) setTheme(R.style.Theme_Fame);
+        if (preferences.getTypeLogin() == 3) setTheme(R.style.ActivityStyle);
+
+
         setContentView(R.layout.activity_menu);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -61,7 +70,12 @@ public class MenuActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.logout) {
+            preferences.clearPreference();
+            Intent i = new Intent(this, SplashScreenActivity.class);
+            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(i);
+            finish();
             return true;
         }
 
